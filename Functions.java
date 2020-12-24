@@ -5,6 +5,8 @@
  */
 package functions;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Paolo
@@ -14,14 +16,33 @@ public class Functions {
    
     public static void main(String[] args) {
       
-       int[] nums = {5, 3, 8, 0};
+      /** int[] nums = {5, 3, 8, 0};
        int[] num2 = {2, 6, 9, 4};
        
        int[] total = merge(nums, nums.length, num2, num2.length);
        
        for(int i = 0; i < total.length; i++){
            System.out.println("Value: " + total[i]);
-       }
+
+       } **/
+      
+      Scanner input = new Scanner(System.in);
+      Sequence seq = new Sequence();
+        
+        System.out.println("Muffin Quantity");
+        int muffAmount = input.nextInt();
+        System.out.println("Muffin Price");
+        double muffPrice = input.nextDouble();
+        System.out.println("Donut Quantity");
+        int donAmount = input.nextInt();
+        System.out.println("Donut Price");
+        double donPrice = input.nextDouble();
+        
+        
+        
+        System.out.println(seq.calcFood(muffPrice, muffAmount, donPrice, donAmount));
+        
+        
       
     }
     
